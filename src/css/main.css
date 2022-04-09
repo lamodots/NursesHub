@@ -9,6 +9,7 @@
      /*****Entire Page Container******/
     .wrapper{
         width:100%;
+        max-width:100%;
         height:100vh;
         
     }
@@ -16,9 +17,25 @@
     .content{
         display:flex;
     }
+    @media screen and (max-width:375px){
+        .content{
+            display:flex;
+            flex-direction:column;
+            max-width:350px;
+            margin:0 auto;
+           
+        }
+    }
      /*****Left column******/
     .inter{
         width:50%;
+    }
+    @media screen and (max-width:375px){
+        .inter{
+            width:50%;
+       
+        }
+     
     }
      /*****right column******/
     .inter2{
@@ -27,11 +44,28 @@
         background-color:#C8A46F;
 
     }
+    @media screen and (max-width:375px){
+        .inter2{
+           display:none;
+           
+    
+        }
+    }
+
      /*****image******/
     img{
         width:100%;
         height:100%;
     }
+    @media screen and (max-width:375px){
+        .img{
+           display:none;
+       
+        }
+     
+    }
+   
+    
      /*****Heading******/
     h1{
         text-transform:Uppercase;
@@ -41,6 +75,22 @@
         margin:auto;
         font-size:24px;
     }
+    @media screen and (max-width:375px){
+        h1{
+            text-transform:Uppercase;
+            font-family:'Poppins', sans-serif;
+            padding-top:160px;
+            width:300px;
+            
+          margin-left:20px;
+          text-align:center;
+         
+           
+            font-size:22px;
+        }
+     
+    }
+    
      /*****Create account button******/
    .btn1{
         display:block;
@@ -79,6 +129,15 @@
         
         width:400px;
         margin: 30px auto;
+    }
+    @media screen and (max-width:375px){
+        .boxbutton{
+        
+          
+           max-width:350px;
+           padding:10px;
+        }
+     
     }
      /*****logo divs container******/
     .logowrapper{
